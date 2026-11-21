@@ -156,3 +156,21 @@ A task is complete only when:
 ## Primary Objective
 
 Maintain `App-mobile.jsx` as a reliable, maintainable, consistent mobile-first React storefront. Prefer small, deliberate, verifiable changes over broad rewrites.
+
+## 11. App-mobile.jsx Structure Tree (Always Show)
+
+To make the codebase easier for the user to understand and navigate, always include a readable structure tree of `App-mobile.jsx` in responses about this file or repository work.
+
+Rules:
+
+1. Show the structure tree in every response that discusses, audits, plans, implements, or verifies `App-mobile.jsx`; do not wait for the user to ask for it.
+2. Build the tree from the actual current source code. Inspect the latest `App-mobile.jsx` before presenting it; never invent component names, nesting, functions, or section order.
+3. Represent the file's real organization in a clear hierarchy, including major configuration/constants, context and state, utilities/hooks, shared components, page components, overlays, and the app entry/render flow where they exist.
+4. Use a compact tree for routine updates, but retain enough detail to help the user locate the relevant component or function. Expand the relevant branch when explaining a change.
+5. For a full audit or when the user asks for the complete structure, provide the most complete tree that can be verified from the source.
+6. If only part of the file was inspected, label the tree as partial and do not imply it represents the whole file.
+7. After implementation, update the tree to reflect the resulting source and clearly mark the affected branch or branches.
+8. Keep the tree separate from the change summary so the user can quickly scan the file structure.
+9. Use a plain-text tree format with clear branch markers (for example, `├──`, `└──`, and `│`) inside a code block.
+
+The structure tree is documentation for navigation, not a reason to refactor or reorganize the source. Do not change code solely to make the tree look cleaner.
